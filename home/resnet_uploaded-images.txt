@@ -1,0 +1,76 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:               Beauceron_02.jpg  label:                  beauceron
+ 2 key:   Yamaha_CP_Stage_Piano_01.jpg  label:      yamaha cp stage piano
+ 3 key:                    Lion_01.jpg  label:                       lion
+ 4 key:               Beauceron_01.jpg  label:                  beauceron
+
+     MATCH:
+
+                   Lion_01.jpg: 
+Real:                       lion   Classifier: lion, king of beasts, panthera leo
+
+ NOT A MATCH:
+
+              Beauceron_02.jpg: 
+Real:                  beauceron   Classifier:                         kelpie
+
+  Yamaha_CP_Stage_Piano_01.jpg: 
+Real:      yamaha cp stage piano   Classifier:                    rule, ruler
+
+              Beauceron_01.jpg: 
+Real:                  beauceron   Classifier:                         kelpie
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                   Lion_01.jpg: 
+Real:                       lion   Classifier: lion, king of beasts, panthera leo  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+              Beauceron_02.jpg: 
+Real:                  beauceron   Classifier:                         kelpie  
+PetLabelDog: 1  ClassLabelDog: 1
+
+  Yamaha_CP_Stage_Piano_01.jpg: 
+Real:      yamaha cp stage piano   Classifier:                    rule, ruler  
+PetLabelDog: 0  ClassLabelDog: 0
+
+              Beauceron_01.jpg: 
+Real:                  beauceron   Classifier:                         kelpie  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture RESNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not Dog Images    :   2
+ 
+pct_match: 25.0%
+pct_correct_dogs: 100.0%
+pct_correct_breed: 0.0%
+pct_correct_notdogs: 100.0%
+
+INCORRECT Dog Breed Assignment:
+Real:                  beauceron   Classifier:                         kelpie
+Real:                  beauceron   Classifier:                         kelpie
+
+** Total Elapsed Runtime: 0:0:0
